@@ -35,7 +35,15 @@
                                         </a>
                                     </div>
                                     <div class="product-icon icon-inline">
-                                        <button class="tooltip-top  add-cartnoty" data-tippy-content="Add to cart">
+                                        <button class="tooltip-top  add-cartnoty" data-tippy-content="Add to cart"
+                                                cus-product-id="{{ $productItem->id }}"
+                                                cus-product-name="{{ ucwords($productItem->name) }}"
+                                                cus-product-slug="{{ route('productDetailsSlug',$productItem->slug) }}"
+                                                cus-price="{{ $productItem->sale_price }}"
+                                                cus-discount="{{ $productItem->discount_amount }}"
+                                                cus-photo="{{ asset($productItem->photo)}}"
+                                                cus-brand="{{ $productItem->brand->brand_name }}"
+                                                cus-category="{{ $productItem->category->name }}" >
                                             <i data-feather="shopping-cart"></i>
                                         </button>
                                     </div>
@@ -60,66 +68,6 @@
                             </div>
                         </div>
                     @endforeach
-                    <div>
-                        <div class="product-box product-box2">
-                            <div class="product-imgbox">
-                                <div class="product-front">
-                                    <a href="{{ route('productDetailsSlug',$productItem->slug) }}">
-                                        <img src="{{ asset('frontend') }}/assets/images/mega-store/product/2.jpg"
-                                             class="img-fluid  " alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-back">
-                                    <a href="{{ route('productDetailsSlug',$productItem->slug) }}">
-                                        <img src="{{ asset('frontend') }}/assets/images/mega-store/product/7.jpg"
-                                             class="img-fluid  " alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-icon icon-inline">
-                                    <button class="tooltip-top  add-cartnoty" data-tippy-content="Add to cart">
-                                        <i data-feather="shopping-cart"></i>
-                                    </button>
-                                    <a href="javascript:void(0)" class="add-to-wish tooltip-top"
-                                       data-tippy-content="Add to Wishlist">
-                                        <i data-feather="heart"></i>
-                                    </a>
-                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view"
-                                       class="tooltip-top" data-tippy-content="Quick View">
-                                        <i data-feather="eye"></i>
-                                    </a>
-                                    <a href="compare.html" class="tooltip-top" data-tippy-content="Compare">
-                                        <i data-feather="refresh-cw"></i>
-                                    </a>
-                                </div>
-                                <div class="new-label1">
-                                    <div>new</div>
-                                </div>
-                                <div class="on-sale1">
-                                    on sale
-                                </div>
-                            </div>
-                            <div class="product-detail product-detail2 ">
-                                <ul>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star-o"></i></li>
-                                </ul>
-                                <a href="product-page(no-sidebar).html">
-                                    <h3>men analogue watch</h3>
-                                </a>
-                                <h5>
-                                    $10
-                                    <span>
-                      $30
-                    </span>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
             </div>
         </div>
