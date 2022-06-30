@@ -1,0 +1,8 @@
+.theme-pannel-main {display: none !important;}
+.color-picker a  {display: none !important;}
+.logoImg{ width: 220px; height: 80px !important;}
+@media (max-width: 575px){
+    .logoImg{height: 50px !important;}
+}
+.customPhoto{height: 240px !important;}
+.category-header .navbar-menu .category-left .nav-block .nav-left .navbar{height: 67px !important; background-color: #4150b5 !important;}
