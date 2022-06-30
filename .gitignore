@@ -17,4 +17,5 @@ composer.lock
 package-lock.json
 /public/assets/images
 /public/assets/images/img
-/public
+/public/frontend
+public/assets
