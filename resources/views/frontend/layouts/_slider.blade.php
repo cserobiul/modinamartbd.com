@@ -41,7 +41,7 @@
                                 <div>
                                     <h3>smart watch</h3>
                                     <h4>speacial offer</h4>
-                                    <a href="product-page(left-sidebar).html" class="btn btn-rounded btn-xs"> Shop
+                                    <a href="{{ route('shopPage') }}" class="btn btn-rounded btn-xs"> Shop
                                         Now </a>
                                 </div>
                             </div>
@@ -58,7 +58,7 @@
                                 <div>
                                     <h3>stylish chair</h3>
                                     <h4>weekend sale</h4>
-                                    <a href="product-page(left-sidebar).html" class="btn btn-rounded btn-xs"> Shop
+                                    <a href="{{ route('shopPage') }}" class="btn btn-rounded btn-xs"> Shop
                                         Now </a>
                                 </div>
                             </div>
@@ -79,7 +79,7 @@
                                 <div>
                                     <h3>smart glasses</h3>
                                     <h4>best choise</h4>
-                                    <a href="product-page(left-sidebar).html" class="btn btn-rounded btn-xs"> Shop
+                                    <a href="{{ route('shopPage') }}" class="btn btn-rounded btn-xs"> Shop
                                         Now </a>
                                 </div>
                             </div>
@@ -96,7 +96,7 @@
                                 <div>
                                     <h3>smart led tv</h3>
                                     <h4>now 70% off</h4>
-                                    <a href="product-page(left-sidebar).html" class="btn btn-rounded btn-xs"> Shop
+                                    <a href="{{ route('shopPage') }}" class="btn btn-rounded btn-xs"> Shop
                                         Now </a>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@
                                 <div>
                                     <h3>smart phone</h3>
                                     <h4>special offer</h4>
-                                    <a href="product-page(left-sidebar).html" class="btn btn-rounded btn-xs"> Shop
+                                    <a href="{{ route('shopPage') }}" class="btn btn-rounded btn-xs"> Shop
                                         Now </a>
                                 </div>
                             </div>
