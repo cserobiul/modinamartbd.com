@@ -147,7 +147,7 @@ class FrontendController extends Controller
             ->limit(2)
             ->get();
 
-        return view('frontend.home.index', $data);
+        return view('frontend.home.index-2', $data);
 
     }
 

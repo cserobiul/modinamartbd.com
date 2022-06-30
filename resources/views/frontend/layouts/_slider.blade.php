@@ -1,92 +1,129 @@
-<section class="theme-slider section-pt-space home-slide">
-    <div class="custom-container">
-        <div class="row">
-            <div class="col-xl-8 col-lg-9 offset-xl-2 px-abjust">
-                <div class="slide-1 no-arrow">
-                    @if(count($sliders = \App\Models\Slider::orderBy('order','ASC')->get()) > 0)
-                        @foreach($sliders as $key => $slider)
-                            <div>
-                                <div class="slider-banner">
-                                    <div class="slider-img">
-                                        <img src="{{ asset($slider->photo) }}" alt="">
-                                    </div>
-                                    <div class="slider-banner-contain"></div>
-                                </div>
-                            </div>
-                        @endforeach
-                    @else
-                        <div>
-                            <div class="slider-banner">
-                                <div class="slider-img">
-                                    <ul class="layout2-slide-1">
-                                        <li id="img-1"><img src="{{ asset('frontend') }}/assets/images/layout-1/slider/1.1.png" class="img-fluid" alt="slider"></li>
-                                    </ul>
-                                </div>
-                                <div class="slider-banner-contain">
+<section class="megastore-slide collection-banner section-py-space b-g-white">
+    <div class="container-fluid">
+        <div class="row mega-slide-block">
+            <div class="col-xl-9 col-lg-12 ">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="slide-1 no-arrow">
+                            @if(count($sliders = \App\Models\Slider::orderBy('order','ASC')->get()) > 0)
+                                @foreach($sliders as $key => $slider)
                                     <div>
-                                        <h4>the best</h4>
-                                        <h1>loffer shoes</h1>
-                                        <h2>minimum 30% off</h2>
-                                        <a href="{{ route('shopPage') }}" class="btn btn-normal">Shop Now</a>
+                                        <div class="slide-main">
+                                            <img src="{{ asset($slider->photo) }}" class="img-fluid bg-img"
+                                                 alt="mega-store">
+                                            <div class="slide-contain">
+
+                                            </div>
+                                        </div>
                                     </div>
+                                @endforeach
+                            @else
+                                <div>
+                                    <div class="slide-main">
+                                        <img src="{{ asset('frontend/assets/images/mega-store/slider/1.jpg') }}" class="img-fluid bg-img"
+                                             alt="mega-store">
+                                        <div class="slide-contain">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            @endif
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div
+                            class="collection-banner-main banner-18 banner-style7 collection-color13 p-left text-center">
+                            <div class="collection-img">
+                                <img src="{{ asset('frontend') }}/assets/images/mega-store/slider/banner/1.jpg"
+                                     class="img-fluid bg-img  " alt="banner">
+                            </div>
+                            <div class="collection-banner-contain ">
+                                <div>
+                                    <h3>smart watch</h3>
+                                    <h4>speacial offer</h4>
+                                    <a href="product-page(left-sidebar).html" class="btn btn-rounded btn-xs"> Shop
+                                        Now </a>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="slider-banner">
-                                <div class="slider-img">
-                                    <ul class="layout2-slide-2">
-                                        <li id="img-2"><img src="{{ asset('frontend') }}/assets/images/layout-1/slider/1.2.png" class="img-fluid" alt="slider"></li>
-                                    </ul>
-                                </div>
-                                <div class="slider-banner-contain">
-                                    <div>
-                                        <h4>cinema festival</h4>
-                                        <h1>reflex camera</h1>
-                                        <h2>minimum 40% off</h2>
-                                        <a href="{{ route('shopPage') }}" class="btn btn-normal">Shop Now</a>
-                                    </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div
+                            class="collection-banner-main banner-18 banner-style7 collection-color9 p-left text-center">
+                            <div class="collection-img">
+                                <img src="{{ asset('frontend') }}/assets/images/mega-store/slider/banner/2.jpg"
+                                     class="img-fluid bg-img  " alt="banner">
+                            </div>
+                            <div class="collection-banner-contain ">
+                                <div>
+                                    <h3>stylish chair</h3>
+                                    <h4>weekend sale</h4>
+                                    <a href="product-page(left-sidebar).html" class="btn btn-rounded btn-xs"> Shop
+                                        Now </a>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="slider-banner">
-                                <div class="slider-img">
-                                    <ul class="layout2-slide-3">
-                                        <li id="img-3"><img src="{{ asset('frontend') }}/assets/images/layout-1/slider/1.3.png" class="img-fluid" alt="slider"></li>
-                                    </ul>
-                                </div>
-                                <div class="slider-banner-contain">
-                                    <div>
-                                        <h4>march special</h4>
-                                        <h1>leather bag</h1>
-                                        <h2>minimum 60% off</h2>
-                                        <a href="{{ route('shopPage') }}" class="btn btn-normal">Shop Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    @endif
+                    </div>
                 </div>
             </div>
-            <div class="col-xl-2 col-sm-3 pl-0 offer-banner">
-                <div class="offer-banner-img">
-                    <img src="{{ asset('frontend') }}/assets/images/layout-1/offer-banner.png" alt="offer-banner" class="img-fluid  ">
-                </div>
-                <div class="banner-contain">
-                    <div>
-                        <a href="{{ route('shopPage') }}">
-                            <h5>Special Offer for you</h5>
-                            <div class="discount-offer">
-                                <h1>50%</h1>
-                                <sup>off</sup>
-                            </div >
-                        </a>
+            <div class="col-xl-3 col-lg-12 ">
+                <div class="row collection-p6">
+                    <div class="col-xl-12 col-lg-4 col-md-6">
+                        <div
+                            class="collection-banner-main banner-17 banner-style7 collection-color14 p-left text-center">
+                            <div class="collection-img">
+                                <img src="{{ asset('frontend') }}/assets/images/mega-store/slider/banner/3.jpg"
+                                     class="img-fluid bg-img  " alt="banner">
+                            </div>
+                            <div class="collection-banner-contain ">
+                                <div>
+                                    <h3>smart glasses</h3>
+                                    <h4>best choise</h4>
+                                    <a href="product-page(left-sidebar).html" class="btn btn-rounded btn-xs"> Shop
+                                        Now </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-4 col-md-6">
+                        <div
+                            class="collection-banner-main banner-17 banner-style7 collection-color15 p-left text-center">
+                            <div class="collection-img">
+                                <img src="{{ asset('frontend') }}/assets/images/mega-store/slider/banner/4.jpg"
+                                     class="img-fluid bg-img  " alt="banner">
+                            </div>
+                            <div class="collection-banner-contain ">
+                                <div>
+                                    <h3>smart led tv</h3>
+                                    <h4>now 70% off</h4>
+                                    <a href="product-page(left-sidebar).html" class="btn btn-rounded btn-xs"> Shop
+                                        Now </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-4 col-md-12">
+                        <div class="collection-banner-main banner-18 banner-style7  p-left text-center">
+                            <div class="collection-img">
+                                <img src="{{ asset('frontend') }}/assets/images/mega-store/slider/banner/5.jpg"
+                                     class="img-fluid bg-img  " alt="banner">
+                            </div>
+                            <div class="collection-banner-contain ">
+                                <div>
+                                    <h3>smart phone</h3>
+                                    <h4>special offer</h4>
+                                    <a href="product-page(left-sidebar).html" class="btn btn-rounded btn-xs"> Shop
+                                        Now </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
 
 
