@@ -274,20 +274,7 @@
                                             @enderror
                                         </div>
 
-                                        <div class="col-md-6 pb-2 pt-3">
-                                            <label for="view_section">View Section</label>
-                                            <select name="view_section" class="form-control show-tick ms select2" data-placeholder="Select">
-                                                <option value="BEST_SELLER" @if(old('view_section',isset($product->view_section)?$product->view_section:null) == 'BEST_SELLER') selected @endif>BEST_SELLER</option>
-                                                <option value="NEW_ARRIVAL" @if(old('view_section',isset($product->view_section)?$product->view_section:null) == 'NEW_ARRIVAL') selected @endif>NEW_ARRIVAL</option>
-                                                <option value="JUST_FOR_YOU" @if(old('view_section',isset($product->view_section)?$product->view_section:null) == 'JUST_FOR_YOU') selected @endif>JUST_FOR_YOU</option>
-                                                <option value="MOST_POPULAR" @if(old('view_section',isset($product->view_section)?$product->view_section:null) == 'MOST_POPULAR') selected @endif>MOST_POPULAR</option>
-                                                <option value="FLASH_SELL" @if(old('view_section',isset($product->view_section)?$product->view_section:null) == 'FLASH_SELL') selected @endif>FLASH_SELL</option>
-                                                <option value="SPECIAL_OFFER" @if(old('view_section',isset($product->view_section)?$product->view_section:null) == 'SPECIAL_OFFER') selected @endif>SPECIAL_OFFER</option>
-                                            </select>
-                                            @error('view_section')
-                                            <div class="text-danger">{{ $message }}</div>
-                                            @enderror
-                                        </div>
+
                                     </div>
 
                                 </div>
