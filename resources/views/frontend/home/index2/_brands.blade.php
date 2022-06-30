@@ -9,66 +9,18 @@
         <div class="row brand-block">
             <div class="col-12">
                 <div class="brand-slide12 no-arrow mb--5">
+                    @foreach($brands = \App\Models\Brand::where('status','active')->get() as $brand)
                     <div>
                         <div class="brand-box">
-                            <img src="{{ asset('frontend') }}/assets/images/mega-store/brand/1.png" alt="brand" class="img-fluid">
+                            @if($brand->photo)
+                            <img src="{{ asset($brand->photo) }}" alt="brand" class="img-fluid">
+                            @else
+                                <img src="{{ asset('frontend') }}/assets/images/mega-store/brand/6.png" alt="brand" class="img-fluid">
+                            @endif
                         </div>
                     </div>
-                    <div>
-                        <div class="brand-box">
-                            <img src="{{ asset('frontend') }}/assets/images/mega-store/brand/2.png" alt="brand" class="img-fluid">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="brand-box">
-                            <img src="{{ asset('frontend') }}/assets/images/mega-store/brand/3.png" alt="brand" class="img-fluid">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="brand-box">
-                            <img src="{{ asset('frontend') }}/assets/images/mega-store/brand/4.png" alt="brand" class="img-fluid">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="brand-box">
-                            <img src="{{ asset('frontend') }}/assets/images/mega-store/brand/5.png" alt="brand" class="img-fluid">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="brand-box">
-                            <img src="{{ asset('frontend') }}/assets/images/mega-store/brand/6.png" alt="brand" class="img-fluid">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="brand-box">
-                            <img src="{{ asset('frontend') }}/assets/images/mega-store/brand/7.png" alt="brand" class="img-fluid">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="brand-box">
-                            <img src="{{ asset('frontend') }}/assets/images/mega-store/brand/4.png" alt="brand" class="img-fluid">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="brand-box">
-                            <img src="{{ asset('frontend') }}/assets/images/mega-store/brand/5.png" alt="brand" class="img-fluid">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="brand-box">
-                            <img src="{{ asset('frontend') }}/assets/images/mega-store/brand/6.png" alt="brand" class="img-fluid">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="brand-box">
-                            <img src="{{ asset('frontend') }}/assets/images/mega-store/brand/4.png" alt="brand" class="img-fluid">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="brand-box">
-                            <img src="{{ asset('frontend') }}/assets/images/mega-store/brand/5.png" alt="brand" class="img-fluid">
-                        </div>
-                    </div>
+                    @endforeach
+
                     <div>
                         <div class="brand-box">
                             <img src="{{ asset('frontend') }}/assets/images/mega-store/brand/6.png" alt="brand" class="img-fluid">
