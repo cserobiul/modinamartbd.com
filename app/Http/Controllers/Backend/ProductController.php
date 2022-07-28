@@ -244,9 +244,9 @@ class ProductController extends Controller
             $file->move(public_path($path),$file_name);
             $data['photo'] = $path.'/'.$file_name;
 
-            if(file_exists(public_path($checkProduct->photo))){
-                unlink(public_path($checkProduct->photo));
-            }
+//            if(file_exists(public_path($checkProduct->photo))){
+//                unlink(public_path($checkProduct->photo));
+//            }
         }
 
         //multiple photo upload
